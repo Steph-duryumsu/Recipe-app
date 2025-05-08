@@ -10,7 +10,7 @@ body {
   border: none;
   color: #007bff;
   cursor: pointer;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   font-size: 0.9rem;
   padding: 0;
 }
@@ -27,6 +27,12 @@ body {
   margin: 1rem;
   width: 300px;
   transition: transform 0.3s ease;
+  z-index: 900;
+
+  /* background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease; */
 }
 
 .recipe-card:hover {
@@ -36,16 +42,20 @@ body {
 .recipe-img {
   width: 100%;
   border-radius: 12px;
-  /* object-fit: cover; */
+  object-fit: cover;
   max-height: 200px;
 }
 
 .recipe-list {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
-  gap: 2rem;
+  gap: 2rem; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
 }
 
 .recipe-card h3 {

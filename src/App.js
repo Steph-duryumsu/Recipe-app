@@ -3,6 +3,7 @@ import axios from 'axios';
 import SearchBox  from './components/SearchBox';
 import './App.css';
 import RecipeList from './components/RecipeList';
+import ReviewSection from './components/ReviewSection';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -29,8 +30,10 @@ function App() {
 
   return (
     <div className='App'>
+      {/* <img src='Images/image1.jpg' alt='This is a picture'/> */}
       <SearchBox searchTerm={searchTerm} onSearchChange={setSearchTerm}/>
       <RecipeList recipes={recipes}/>
+      <ReviewSection/>
     </div>
   );
 }

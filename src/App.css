@@ -5,7 +5,11 @@ body{
 }
 
 .App{
-  padding-top: 120px;
+  background-image: url('./Images/image1.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  padding: 5px;
 }
 
 .content{

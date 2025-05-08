@@ -1,0 +1,57 @@
+.reviewContainer{
+  /* display: flex; */
+  margin-top: 300px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 30%;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.review-toggle-btn{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 8px 30px;
+  border: none;
+  background-color: #808080;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.SubmitReview{
+  padding: 8px 30px;
+  border: none;
+  background-color: #808080;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.textarea{
+  border: 1px solid #ccc;
+  width: 25%;
+  height: 60px;
+  border-radius: 6px;
+}
+
+.select{
+  margin-top: 10px;
+  width: 25%;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.reviewEntry{
+  margin-top: 15px;
+  padding: 10px;
+  border-left: 4px solid #ff7f50;
+  background-color: #fff8f0;
+  border-radius: 8px;
+}
+
+.reviewEmoji{
+  font-size: 40px;
+  margin-right: 10px;
+}
