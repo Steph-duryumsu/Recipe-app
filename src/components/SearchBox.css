@@ -1,12 +1,20 @@
 .search-header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.5); */
-  padding: 50px;
   z-index: 1000; 
+  text-align: center; 
+  margin-left: 200px;
+    /* width: 100%; */
   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
-  text-align: center;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+.search-header h1{
+  font-size: 50px;
+}
+
+.search-header p{
+  font-size: 20px;
 }
 
 

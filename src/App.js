@@ -29,7 +29,7 @@ function App() {
   }, [searchTerm]);
 
   return (
-    <div className='App'>
+    <div className={searchTerm ? 'app-background' : 'App'}>
       {/* <img src='Images/image1.jpg' alt='This is a picture'/> */}
       <SearchBox searchTerm={searchTerm} onSearchChange={setSearchTerm}/>
       <RecipeList recipes={recipes}/>

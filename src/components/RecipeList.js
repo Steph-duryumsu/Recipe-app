@@ -53,17 +53,26 @@ const RecipeCard = ({ recipe }) => {
 };
 
 const RecipeList = ({ recipes }) => {
+  if (recipes === null) return <p>No recipes found.</p>; // when API returns null
+  if (recipes.length === 0) return null; // if it doesn't show anything until search is made
+
   return (
     <div className='recipe-list'>
-      {recipes.length > 0 ? (
-        recipes.map((recipe) => (
-          <RecipeCard key={recipe.idMeal} recipe={recipe} />
-        ))
-      ) : (
-        <p>No recipes found.</p>
-      )}
+      {recipes.map((recipe) => (
+        <RecipeCard key={recipe.idMeal} recipe={recipe} />
+      ))}
     </div>
   );
 };
 
 export default RecipeList;
+
+{/* <div className='recipe-list'>
+{recipes.length > 0 ? (
+  recipes.map((recipe) => (
+    <RecipeCard key={recipe.idMeal} recipe={recipe} />
+  ))
+) : (
+  <p>No recipes found.</p>
+)}
+</div> */}

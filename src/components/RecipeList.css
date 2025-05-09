@@ -10,9 +10,7 @@ body {
   border: none;
   color: #007bff;
   cursor: pointer;
-  /* margin-left: 10px; */
   font-size: 0.9rem;
-  padding: 0;
 }
 
 .toggle-btn:hover {
